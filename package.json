@@ -1,0 +1,13 @@
+{
+  "name": "3d-portfolio",
+  "version": "1.0.0",
+  "description": "3D Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve . -p 8000",
+    "start": "serve . -p 8000"
+  },
+  "keywords": ["portfolio", "3d", "threejs"],
+  "author": "",
+  "license": "MIT"
+}

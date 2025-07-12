@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UmarSharook Gurramkonda - Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">UmarSharook</div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-3d" id="hero-3d"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">UmarSharook Gurramkonda</h1>
+      <p class="hero-subtitle">Cybersecurity Enthusiast | Python Developer | Network Defender</p>
+      <button class="cta-button" onclick="scrollToSection('projects')">Explore My Work</button>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">I am a Computer Science student with a strong passion for cybersecurity and programming. Skilled in Python, network security, and web vulnerability assessment.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon">🔐</div>
+          <h3>Network Security</h3>
+          <p>Vulnerability assessment, traffic monitoring, firewall/IDS configuration.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🐍</div>
+          <h3>Python Development</h3>
+          <p>Automation, data analysis, and workflow scripting using Python and libraries.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🌐</div>
+          <h3>Web Security</h3>
+          <p>Experience with tools like Burp Suite, OWASP ZAP and mitigating OWASP Top 10 threats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Hands-on experience in developing tools and securing systems.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Web Vulnerability">
+          </div>
+          <div class="project-content">
+            <h3>Web Vulnerability</h3>
+            <p>Performed XSS, SQLi, CSRF testing, improved security posture, and used OWASP tools.</p>
+            <span class="project-tech">Burp Suite, OWASP ZAP, HTML</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800" alt="CPU Task Manager">
+          </div>
+          <div class="project-content">
+            <h3>CPU Task Manager</h3>
+            <p>GUI-based system monitor app showing live CPU, memory, disk usage using psutil.</p>
+            <span class="project-tech">Python, Psutil, Tkinter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Security Tools | Python | Networking | Linux</p>
+      </div>
+      <div class="skills-content">
+        <div class="skills-list">
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">Python</span><span class="skill-percentage">90%</span></div><div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div></div>
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">Kali Linux</span><span class="skill-percentage">85%</span></div><div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div></div>
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">Wireshark</span><span class="skill-percentage">80%</span></div><div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div></div>
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">Metasploit</span><span class="skill-percentage">78%</span></div><div class="skill-bar"><div class="skill-progress" data-width="78%"></div></div></div>
+          <div class="skill-item"><div class="skill-info"><span class="skill-name">Burp Suite</span><span class="skill-percentage">75%</span></div><div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div></div>
+        </div>
+        <div class="skills-3d" id="skills-3d"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Let's connect and collaborate on security-focused projects!</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Details</h3>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">umarsharook@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p class="contact-value">+91 8639567184</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Tirupati, Andhra Pradesh, India</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 UmarSharook Gurramkonda</p>
+    </div>
+  </footer>
+</body>
+</html>
+
